@@ -1,0 +1,108 @@
+[
+    {
+        "type":"TOOL",
+        "category" : "weapons",
+        "id" : "bio_hamon_jonathan_weapon",
+        "name" : "Hamon",
+        "description" : "Johnathan Joestar's hamon. Can be activated to heal minor wounds or light on fire for a short duration.",
+        "weight" : 0,
+        "to_hit" : 3,
+        "color" : "dark_gray",
+        "symbol" : "{",
+        "material" : [ "flesh" ],
+        "techniques" : [ "RAPID" ],
+        "volume" : 0,
+        "bashing" : 10,
+        "flags" : [ "UNARMED_WEAPON", "NO_UNWIELD", "REACH_ATTACK", "UNBREAKABLE_MELEE", "NONCONDUCTIVE", "TRADER_AVOID" ],
+        "use_action" : [
+            {
+            "type" : "heal",
+            "limb_power" : 4,
+            "head_power" : 3,
+            "torso_power" : 5,
+            "bite" : 0.1,
+            "bleed" : 0.5,
+            "move_cost" : 100,
+            "effects" : [ { "id" : "pkill1", "duration" : 120 } ]
+            },
+            {
+              "target": "bio_hamon_jonathan_flaming_weapon",
+              "msg": "You hand burns with fire!",
+              "target_charges": 10,
+              "active": true,
+              "type": "transform"
+            }
+        ]
+    },
+    {
+        "type":"TOOL",
+        "category" : "weapons",
+        "id" : "bio_hamon_jonathan_flaming_weapon",
+        "name" : "Hamon (burning)",
+        "description" : "Hot! On Fire!",
+        "weight" : 0,
+        "to_hit" : 3,
+        "color" : "dark_gray",
+        "symbol" : "{",
+        "material" : [ "flesh" ],
+        "techniques" : [ "RAPID" ],
+        "volume" : 0,
+        "bashing" : 10,
+        "initial_charges": 10,
+        "max_charges": 10,
+        "turns_per_charge": 1,
+        "revert_to": "bio_hamon_jonathan_weapon",
+        "flags" : [ "NO_UNLOAD", "NO_RELOAD", "UNARMED_WEAPON", "NO_UNWIELD", "REACH_ATTACK", "UNBREAKABLE_MELEE", "NONCONDUCTIVE", "TRADER_AVOID", "FLAMING" ],
+        "use_action" : [
+            {
+                "target": "bio_hamon_jonathan_weapon",
+                "msg": "You extinguish your hamon-fire!",
+                "active": false,
+                "menu_text": "Extinguish",
+                "type": "transform"
+            }
+        ]
+    },
+    {
+    "id": "luckandpluck",
+    "type": "TOOL",
+    "symbol": "/",
+    "color": "light_gray",
+    "name": "Luck and Pluck",
+    "copy-from": "longsword",
+    "description": "This is a large medieval sword. It has been inscribed with Luck, and furthermore, Pluck.",
+    "price": 130000,
+    "techniques" : [ "VORPAL" ],
+    "bashing": 12,
+    "cutting": 40,
+    "use_action" : [
+        {
+          "target": "luckandpluck_on",
+          "msg": "Luck and Pluck burns with fire!",
+          "target_charges": 10,
+          "active": true,
+          "type": "transform"
+        }
+        ]
+    },
+    {
+    "id": "luckandpluck_on",
+    "type": "TOOL",
+    "name": "Luck and Pluck (burning)",
+    "copy-from": "luckandpluck",
+    "description": "This is a large medieval sword. It has been inscribed with Luck, and furthermore, Pluck. Also, It's on fire.",
+    "flags" : [ "FLAMING", "NO_UNLOAD", "NO_RELOAD" ],
+    "initial_charges": 10,
+    "max_charges": 10,
+    "turns_per_charge": 1,
+    "use_action" : [
+        {
+            "target": "luckandpluck",
+            "msg": "You extinguish your hamon-fire!",
+            "active": false,
+            "menu_text": "Extinguish",
+            "type": "transform"
+        }
+    ]
+    }
+]
