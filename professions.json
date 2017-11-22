@@ -35,8 +35,14 @@
         ],
         "items": {
             "both" : {
+                "items" : [
+                    "pocketwatch",
+                    "gloves_fingerless_mod",
+                    "slingpack"
+                ],
                 "entries" : [
-                    {"item" : "luckandpluck", "container-item": "baldric"}
+                    {"item" : "luckandpluck", "container-item": "baldric"},
+                    {"item" : "water_clean", "container-item": "canteen_wood"}
                 ]
                 },
             "male": [
