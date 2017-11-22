@@ -1,0 +1,57 @@
+[
+    {
+        "type": "profession",
+        "ident": "Jonathan",
+        "name": {
+            "male": "Jonathan",
+            "female": "Jonathan"
+        },
+        "description": "A great mountain of a man, a wellspring of youth and energy.",
+        "points": 4,
+        "traits": [
+            "PROF_JOESTAR",
+            "PROF_HAMON_JONATHAN",
+            "STR_UP_3",
+            "FASTHEALER2",
+            "PAINREC2",
+            "DEFT"
+        ],
+        "CBMs" :[
+            "bio_hamon_jonathan"
+        ],
+        "skills": [
+            {
+                "level": 2,
+                "name": "unarmed"
+            },
+            {
+                "level": 2,
+                "name": "melee"
+            },
+            {
+                "level": 2,
+                "name": "dodge"
+            }
+        ],
+        "items": {
+            "both" : {
+                "entries" : [
+                    {"item" : "luckandpluck", "container-item": "baldric"}
+                ]
+                },
+            "male": [
+                "briefs",
+                "socks",
+                "dress_shoes",
+                "tux"
+            ],
+            "female": [
+                "bra",
+                "tights",
+                "boots",
+                "maid_dress",
+                "maid_hat"
+            ]
+        }
+   }
+]

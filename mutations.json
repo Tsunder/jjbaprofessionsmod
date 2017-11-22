@@ -1,0 +1,23 @@
+[
+  {
+    "type" : "mutation",
+    "id" : "PROF_JOESTAR",
+    "name" : "Joestar",
+    "points" : 0,
+    "description" : "You are a decendent of a Joestar.",
+    "valid": false,
+    "purifiable": false,
+    "profession": true
+  },
+  {
+    "type" : "mutation",
+    "id" : "PROF_HAMON_JONATHAN",
+    "name" : "Hamon Training",
+    "points" : 0,
+    "description" : "You have been trained in the martial art of Hamon by the great Zeppeli",
+    "initial_ma_styles" : [ "style_hamon_jonathon" ],
+    "valid": false,
+    "purifiable": false,
+    "profession": true
+  }
+]

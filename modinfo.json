@@ -1,0 +1,10 @@
+{
+   "type": "MOD_INFO",
+   "mod_type": "SUPPLEMENTAL",
+   "ident": "jojo",
+   "name": "JJBA Professions",
+   "authors": [ "Astraltor" ],
+   "dependencies": [],
+   "description": "jjba Professions",
+   "path": ""
+}

@@ -1,0 +1,45 @@
+[
+	{
+        "type" : "technique",
+        "id" : "tec_hamon_rebuff_counter",
+        "name" : "Counter",
+        "block_counter": true,
+        "dodge_counter": true,
+        "mult_bonuses" : [["movecost", 0.0]],
+        "flat_bonuses" : [["movecost", 20]],
+        "messages" : [
+            "You counter %s with a hamon-infused attack!",
+            "<npcname> counter %s with a hamon-infused attack!"
+        ]
+    },
+    {
+        "type" : "technique",
+        "id" : "tec_hamon_overdrive_barrage",
+        "name" : "Overdrive",
+        "min_unarmed" : 0,
+        "unarmed_allowed" : true,
+        "mult_bonuses" : [["movecost", 0.2]],
+        "req_buffs" : [
+            "hamon_overdrive"
+        ],
+        "messages" : [
+            "You Overdrive punch %s!",
+            "<npcname> Overdrive punches %s!"
+        ]
+    },
+    {
+        "type" : "technique",
+        "id" : "tec_hamon_sunlight_yellow_overdrive",
+        "name" : "Overdrive",
+        "min_unarmed" : 0,
+        "unarmed_allowed" : true,
+        "mult_bonuses" : [["movecost", 0.2]],
+        "req_buffs" : [
+            "hamon_overdrive"
+        ],
+        "messages" : [
+            "!!!",
+            "!!!"
+        ]
+    }
+]

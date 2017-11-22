@@ -1,0 +1,16 @@
+[
+  {
+    "id": "bio_hamon_jonathan",
+    "type": "bionic",
+    "name": "Hamon",
+    "description": ".",
+    "occupied_bodyparts": [
+      [ "HAND_L", 1 ],
+      [ "HAND_R", 1 ]
+    ],
+    "toggled": true,
+    "act_cost": 0,
+    "fake_item": "bio_hamon_jonathan_weapon",
+    "weapon_bionic": true
+  }
+]

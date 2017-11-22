@@ -1,0 +1,50 @@
+[
+	{
+        "type" : "martial_art",
+        "id" : "style_hamon_jonathon",
+        "name" : "Hamon",
+        "description" : "Jonathan Joestar's Hamon is a combination of the Hamon martial arts and his boxing youth.",
+        "arm_block" : 2,
+        "leg_block" : 3,
+        "static_buffs" : [
+
+        ],
+        "onhit_buffs": [
+            {
+                "id" : "hamon_overdrive_pre",
+                "name" : "Overdrive",
+                "description" : "",
+                "unarmed_allowed" : true,
+                "min_unarmed" : 1,
+                "buff_duration" : 1,
+                "max_stacks" : 1
+            },
+            {
+                "id" : "hamon_overdrive",
+                "name" : "Overdrive",
+                "description" : "",
+                "unarmed_allowed" : true,
+                "min_unarmed" : 1,
+                "buff_duration" : 2,
+                "req_buffs" : [
+                  "hamon_overdrive_pre"
+                  ],
+                "max_stacks" : 1
+            }
+        ],
+        "techniques" : [
+            "tec_hamon_overdrive_barrage",
+            "tec_precise",
+            "WIDE",
+            "tec_feint",
+            "tec_counter",
+            "tec_boxing_rapid",
+            "tec_break"
+
+        ],
+        "weapons" : [
+            "luckandpluck",
+            "luckandpluck_on"
+        ]
+    }
+]
